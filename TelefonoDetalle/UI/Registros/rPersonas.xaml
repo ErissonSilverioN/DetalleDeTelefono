@@ -1,0 +1,33 @@
+﻿<Window x:Class="TelefonoDetalle.UI.Registros.rPersonas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TelefonoDetalle.UI.Registros"
+        mc:Ignorable="d"
+        Title="rPersonas" Height="600" Width="600">
+    <Grid>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="26,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="22,93,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.132,0.246"/>
+        <Label Content="Direccion" HorizontalAlignment="Left" Margin="25,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cedula" HorizontalAlignment="Left" Margin="27,166,0,0" VerticalAlignment="Top"/>
+        <Label Content="F. Nacimiento" HorizontalAlignment="Left" Margin="242,166,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="59,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <TextBox x:Name="nombreTextBox" HorizontalAlignment="Left" Margin="93,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="direccionTextBox" HorizontalAlignment="Left" Margin="94,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="cedulaTextBox" HorizontalAlignment="Left" Margin="95,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="fechanacDatePicker" HorizontalAlignment="Left" Margin="330,169,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="30,210,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tipo Telefono:" HorizontalAlignment="Left" Margin="245,209,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="telefonoTextBox" HorizontalAlignment="Left" Margin="94,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tipotelefonoTextBox" HorizontalAlignment="Left" Margin="336,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="telefonodetalleDataGrid" Margin="26,245,39,135"/>
+        <Button x:Name="buscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="161,25,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="buscarButton_Click"/>
+        <Button x:Name="agregarButton" Content="Agregar" HorizontalAlignment="Left" Margin="480,201,0,0" VerticalAlignment="Top" Height="32" Width="86" Click="agregarButton_Click"/>
+        <Button x:Name="nuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="27,506,0,0" VerticalAlignment="Top" Height="44" Width="140" Click="nuevoButton_Click"/>
+        <Button x:Name="guardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="208,503,0,0" VerticalAlignment="Top" Height="46" Width="138" Click="guardarButton_Click"/>
+        <Button x:Name="eliminarButton_" Content="Eliminar" HorizontalAlignment="Left" Margin="390,501,0,0" VerticalAlignment="Top" Height="49" Width="136" Click="eliminarButton__Click"/>
+        <Button x:Name="removerButton" Content="Remover" HorizontalAlignment="Left" Margin="28,453,0,0" VerticalAlignment="Top" Height="31" Width="88" Click="removerButton_Click"/>
+
+    </Grid>
+</Window>
